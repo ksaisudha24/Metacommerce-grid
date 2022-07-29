@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;1,400&display=swap');
+.home {
+    background-image: linear-gradient(#4784f5, white 95%);
+    background-repeat: no-repeat;
+    background-size: 187.5rem 62.5rem;
+}
+
+img {
+    float: right;
+    height: 43.75rem;
+    width: 50rem;
+}
+
+.caption {
+    color: #F7E730;
+    font-size: 70px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 180px;
+    /* text-shadow: 2px 2px gray; */
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #027cd5 !important;
+    outline-color: #027cd5 !important;
+}
+
+.btn {
+    margin-left: 120px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn p {
+    color: white;
+    text-decoration: none;
+}
+
+.child {
+    width: 50%;
+    float: left;
+}
+
+.product-child {
+    /* margin-left: 10%; */
+    width: 50%;
+    float: left;
+}
+
+
+/* .product-child img {
+    width: 50%;
+    height: 50%;
+} */
+
+.product-child p {
+    margin-top: 20%;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.product-child .btn {
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 150px;
+    height: 80px;
+}
+
+.description {
+    margin-top: 0 !important;
+    font-weight: normal !important;
+}
+
+.product-image {
+    margin-top: 15%;
+    margin-left: 15%;
+    float: left;
+    height: 30rem;
+    width: 30rem;
+}

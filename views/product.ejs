@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Black Dress</title>
+    <link rel="stylesheet" href="css/home-styles.css">
+</head>
+
+<body>
+    <div class="product-container">
+        <div class="product-child">
+            <img src="<%- item.url %>" class="product-image">
+        </div>
+        <div class="product-child">
+            <p>
+                <%= item.name %>
+            </p>
+            <p class="description">
+                <%= item.description %> <br> Price:
+                    <%= item.price %>
+            </p>
+            <button type="button" class="btn btn-primary btn-lg"> <p>Add to Cart</p></button>
+            <button type="button" class="btn btn-primary btn-lg"> <p>Buy</p> </button>
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
