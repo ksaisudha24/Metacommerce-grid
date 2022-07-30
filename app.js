@@ -27,8 +27,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const uri = process.env.MONGODB_URI;
-mongoose.connect(uri);
+mongoose.connect(process.env.MONGODB_URI);
 // mongoose.connect('mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@cluster0.35f5yfz.mongodb.net/?retryWrites=true&w=majority/flipkartDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
