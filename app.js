@@ -19,7 +19,7 @@ app.use(express.static("public"));
 app.use(cors());
 
 app.use(session({
-    secret: 'keyboard cat',
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false
 }));
@@ -27,8 +27,9 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@cluster0.35f5yfz.mongodb.net/?retryWrites=true&w=majority/flipkartDB', { useNewUrlParser: true, useUnifiedTopology: true });
-// mongoose.connect('mongodb+srv://sudha:ksudha241A@cluster0.35f5yfz.mongodb.net/?retryWrites=true&w=majority/flipkartDB', { useNewUrlParser: true, useUnifiedTopology: true });
+const uri = process.env.MONGODB_URI;
+// mongoose.connect('mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@cluster0.35f5yfz.mongodb.net/?retryWrites=true&w=majority/flipkartDB', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 const itemSchema = new mongoose.Schema({
     id: String,
