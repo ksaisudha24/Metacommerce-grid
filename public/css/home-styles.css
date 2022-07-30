@@ -7,8 +7,15 @@
 
 img {
     float: right;
-    height: 43.75rem;
-    width: 50rem;
+    /* height: 43.75rem;
+    width: 50rem; */
+    height: 40rem;
+    width: 48rem;
+}
+
+.nav {
+    margin-left: 60%;
+    margin-top: 1%;
 }
 
 .caption {
@@ -16,7 +23,7 @@ img {
     font-size: 70px;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
-    margin-left: 120px;
+    margin-left: 150px;
     margin-top: 180px;
     /* text-shadow: 2px 2px gray; */
 }
@@ -30,7 +37,7 @@ img {
 }
 
 .btn {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .btn a {

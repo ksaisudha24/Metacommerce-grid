@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
+    <link rel="stylesheet" href="css/login-styles.css">
 </head>
 
 <body>
-    <form action="/register" method="POST">
-        <label for="email">Email</label>
-        <input type="text" name="username">
-        <label for="password">Password</label>
-        <input type="password" name="password">
-        <button type="submit" name="button">Register</button>
-    </form>
-    <!-- <a href="/auth/google">Sign Up with Google</a> -->
-</body>
 
+    <h2>Register</h2>
+
+    <form action="/register" method="post">
+        <div class="imgcontainer">
+        </div>
+
+        <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Register</button>
+            <button><a href="/login" style="text-decoration: None; color: white;">Login</a></button>
+
+            <label>
+</form>
+
+</body>
 </html>

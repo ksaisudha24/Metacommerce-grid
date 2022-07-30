@@ -119,7 +119,7 @@ const item10 = new Item({
     name: "LandPhone",
     description: "Beetel M59 Caller ID Corded Landline Phone with 16 Digit LCD Display & Adjustable contrast,10 One Touch Memory Buttons,2Ways Speaker Phone,Music On Hold,Solid Build Quality,Classic Design (Black)(M59)",
     price: "Rs 1200",
-    url: " https://us.123rf.com/450wm/alexlmx/alexlmx1710/alexlmx171000363/88062643-black-old-fashioned-phone-3d-rendering-isolated-on-white-background.jpg"
+    url: "https://pyxis.nymag.com/v1/imgs/f2f/107/be226b09c701e111d3d2bc542d61955689-teal-.2x.rhorizontal.w600.jpg"
 });
 const item11 = new Item({
     id: "11",
@@ -194,6 +194,21 @@ const item20 = new Item({
     description: "Traditional Men Dress",
     price: "Rs 1800",
     url: "https://i.pinimg.com/originals/71/58/26/7158262e6c73dd36e900eb45c0ecb1b7.jpg"
+});
+const item21 = new Item({
+    id: "21",
+    name: "Traditional_Dress_men",
+    description: "Traditional Men Dress",
+    price: "Rs 1800",
+    url: "https://thumbs.dreamstime.com/b/men-s-business-casual-dress-office-d-illustration-isolated-men-s-business-casual-dress-office-d-illustration-129351793.jpg"
+});
+
+const item22 = new Item({
+    id: "22",
+    name: "Shoe_1",
+    description: "Men Shoe",
+    price: "Rs 1300",
+    url: "https://static.fibre2fashion.com/MemberResources/LeadResources/4/2016/1/Seller/16108754/Images/16108754_0_Formal%20Shoes.JPG"
 });
 
 
@@ -306,13 +321,19 @@ app.get("/Dress_2", function(req, res) {
 app.get("/Dress_3", function(req, res) {
     res.render("product", { item: item20 })
 });
+app.get("/Men_Dress", function(req, res) {
+    res.render("product", { item: item21 })
+});
+app.get("Shoe_1", function(req, res) {
+    res.render("product", { item: item22 })
+});
 
 
 app.post("/register", function(req, res) {
     User.register({ username: req.body.username }, req.body.password, function(err, user) {
         if (err) {
             console.log(err);
-            res.redirect("/register");
+            res.redirect("https://hub.link/FwceFK8");
         } else {
             passport.authenticate("local")(req, res, function() {
                 res.redirect("https://hub.link/FwceFK8");
