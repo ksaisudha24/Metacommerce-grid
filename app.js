@@ -249,11 +249,7 @@ app.get("/login", function(req, res) {
 });
 
 app.get("/welcome", function(req, res) {
-    if (req.isAuthenticated()) {
-        res.render("welcome");
-    } else {
-        res.redirect("/login");
-    }
+    res.redirect("https://hub.link/mYQucdJ");
 });
 
 app.get("/logout", function(req, res) {
@@ -332,10 +328,10 @@ app.post("/register", function(req, res) {
     User.register({ username: req.body.username }, req.body.password, function(err, user) {
         if (err) {
             console.log(err);
-            res.redirect("https://hub.link/FwceFK8");
+            res.redirect("https://hub.link/mYQucdJ");
         } else {
             passport.authenticate("local")(req, res, function() {
-                res.redirect("https://hub.link/FwceFK8");
+                res.redirect("https://hub.link/mYQucdJ");
             });
         }
     });
@@ -352,7 +348,7 @@ app.post("/login", function(req, res) {
             console.log(err);
         } else {
             passport.authenticate("local")(req, res, function() {
-                res.redirect("https://hub.link/FwceFK8");
+                res.redirect("https://hub.link/mYQucdJ");
             });
         }
     });
