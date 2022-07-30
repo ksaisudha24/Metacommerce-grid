@@ -205,12 +205,11 @@ const item21 = new Item({
 
 const item22 = new Item({
     id: "22",
-    name: "Shoe_1",
+    name: "Shoe_11",
     description: "Men Shoe",
     price: "Rs 1300",
     url: "https://static.fibre2fashion.com/MemberResources/LeadResources/4/2016/1/Seller/16108754/Images/16108754_0_Formal%20Shoes.JPG"
 });
-
 
 const userSchema = new mongoose.Schema({
     username: String,
@@ -324,7 +323,7 @@ app.get("/Dress_3", function(req, res) {
 app.get("/Men_Dress", function(req, res) {
     res.render("product", { item: item21 })
 });
-app.get("Shoe_1", function(req, res) {
+app.get("/Shoe_1", function(req, res) {
     res.render("product", { item: item22 })
 });
 
